@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <assignments>
+        <name>assignApplicantRecordValues</name>
+        <label>Assign Applicant Record Values</label>
+        <locationX>349</locationX>
+        <locationY>307</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Education_Level_New__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getDemoSetupRecord.Education_Level_New__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getDemoSetupRecord.Recruiter_Owner_User__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Marital_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>getDemoSetupRecord.Marital_Status__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Updates an applicant record as a recruit is being converted into an applicant with info from the active Demo Setup record.
+1/19/2021:  Added Marital Status as a field copied from Demo Setup.</description>
+    <interviewLabel>Applicant - Update Applicant Upon Conversion {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Applicant - Update Upon Conversion</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>getDemoSetupRecord</name>
+        <label>Get Demo Setup Record</label>
+        <locationX>176</locationX>
+        <locationY>307</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>assignApplicantRecordValues</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Current_Demo_Config__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Demo_Setup__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>getDemoSetupRecord</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

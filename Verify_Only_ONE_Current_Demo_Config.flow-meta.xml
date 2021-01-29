@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <interviewLabel>Verify Only ONE Current Demo Config {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Verify Only ONE Current Demo Config</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Turn_Off_Current_Config_Checkbox</name>
+        <label>Turn Off Current Config Checkbox</label>
+        <locationX>251</locationX>
+        <locationY>50</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>vDemoSetupID</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Current_Demo_Config__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Current_Demo_Config__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Demo_Setup__c</object>
+    </recordUpdates>
+    <startElementReference>Turn_Off_Current_Config_Checkbox</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>vDemoSetupID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>
