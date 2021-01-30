@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>Add_Competency</members>
 		<members>ApplicantConvertToNewHireFlow</members>
 		<members>EmployeeAssignAssetsFlow</members>
 		<members>EmployeeCreateCasesFromPositionAssetsFlow</members>
@@ -14,7 +13,6 @@
 		<name>Flow</name>
 	</types>
 	<types>
-		<members>Add_Competency</members>
 		<members>ApplicantConvertToNewHireFlow</members>
 		<members>EmployeeAssignAssetsFlow</members>
 		<members>EmployeeCreateCasesFromPositionAssetsFlow</members>
