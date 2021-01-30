@@ -3,67 +3,27 @@
 	<types>
 		<members>Add_Competency</members>
 		<members>ApplicantConvertToNewHireFlow</members>
-		<members>Applicant_Update_Upon_Conversion</members>
-		<members>Close_Telework_Agreement_Case</members>
-		<members>Configure_Employee_as_Retiree</members>
-		<members>Contact_Update_Upon_Conversion_from_Recruit_or_Applicant</members>
-		<members>Create_Performance_Management_Plan</members>
 		<members>EmployeeAssignAssetsFlow</members>
 		<members>EmployeeCreateCasesFromPositionAssetsFlow</members>
 		<members>EmployeeEnrollInPositionCoursesFlow</members>
-		<members>GPS_Service_Catalog_Generic_Flow</members>
-		<members>Interview_Add_Questions</members>
 		<members>Interview_Conduct_Interview</members>
-		<members>LearningEnrollEmployeeInACourseSessionFlow</members>
-		<members>NewHireOnboardingWizardFlow</members>
-		<members>New_Hire_Task_Update_Contact_Information</members>
-		<members>New_Hire_Task_Upload_Form_OF306</members>
-		<members>New_Hire_Task_Upload_I_9_Form</members>
 		<members>Performance_Plan_Navigate_to_Active_Plan</members>
-		<members>Performance_Plan_Review</members>
-		<members>Personnel_Action_Change_in_Duty_Station_by_Manager</members>
-		<members>Personnel_Action_Name_Change_by_Employee</members>
-		<members>Personnel_Action_Realignment_by_Manager</members>
-		<members>Personnel_Action_Reset_Eva</members>
 		<members>Personnel_Action_When_Status_is_Effective</members>
 		<members>Recruit_Create_a_Recruit</members>
 		<members>Telework_Agreement_by_Employee</members>
-		<members>Travel_Request</members>
-		<members>Update_Case_with_missing_Contact</members>
-		<members>Verify_Only_ONE_Current_Demo_Config</members>
 		<name>Flow</name>
 	</types>
 	<types>
 		<members>Add_Competency</members>
 		<members>ApplicantConvertToNewHireFlow</members>
-		<members>Applicant_Update_Upon_Conversion</members>
-		<members>Close_Telework_Agreement_Case</members>
-		<members>Configure_Employee_as_Retiree</members>
-		<members>Contact_Update_Upon_Conversion_from_Recruit_or_Applicant</members>
-		<members>Create_Performance_Management_Plan</members>
 		<members>EmployeeAssignAssetsFlow</members>
 		<members>EmployeeCreateCasesFromPositionAssetsFlow</members>
 		<members>EmployeeEnrollInPositionCoursesFlow</members>
-		<members>GPS_Service_Catalog_Generic_Flow</members>
-		<members>Interview_Add_Questions</members>
 		<members>Interview_Conduct_Interview</members>
-		<members>LearningEnrollEmployeeInACourseSessionFlow</members>
-		<members>NewHireOnboardingWizardFlow</members>
-		<members>New_Hire_Task_Update_Contact_Information</members>
-		<members>New_Hire_Task_Upload_Form_OF306</members>
-		<members>New_Hire_Task_Upload_I_9_Form</members>
 		<members>Performance_Plan_Navigate_to_Active_Plan</members>
-		<members>Performance_Plan_Review</members>
-		<members>Personnel_Action_Change_in_Duty_Station_by_Manager</members>
-		<members>Personnel_Action_Name_Change_by_Employee</members>
-		<members>Personnel_Action_Realignment_by_Manager</members>
-		<members>Personnel_Action_Reset_Eva</members>
 		<members>Personnel_Action_When_Status_is_Effective</members>
 		<members>Recruit_Create_a_Recruit</members>
 		<members>Telework_Agreement_by_Employee</members>
-		<members>Travel_Request</members>
-		<members>Update_Case_with_missing_Contact</members>
-		<members>Verify_Only_ONE_Current_Demo_Config</members>
 		<name>FlowDefinition</name>
 	</types>
 	<version>50.0</version>
