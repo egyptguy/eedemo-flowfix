@@ -12,17 +12,5 @@
 		<members>Telework_Agreement_by_Employee</members>
 		<name>Flow</name>
 	</types>
-	<types>
-		<members>ApplicantConvertToNewHireFlow</members>
-		<members>EmployeeAssignAssetsFlow</members>
-		<members>EmployeeCreateCasesFromPositionAssetsFlow</members>
-		<members>EmployeeEnrollInPositionCoursesFlow</members>
-		<members>Interview_Conduct_Interview</members>
-		<members>Performance_Plan_Navigate_to_Active_Plan</members>
-		<members>Personnel_Action_When_Status_is_Effective</members>
-		<members>Recruit_Create_a_Recruit</members>
-		<members>Telework_Agreement_by_Employee</members>
-		<name>FlowDefinition</name>
-	</types>
 	<version>50.0</version>
 </Package>
